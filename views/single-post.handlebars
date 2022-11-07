@@ -1,0 +1,25 @@
+<section class="content-wrapper">
+    {{>post-card post}}
+
+    {{#if loggedIn}}
+    <form class="form-group comment-form">
+        <div class="form-div">
+            <label for="comment-body">Notes can be made here.</label>
+            <textarea name="comment-body" id="comment-body" class="form-control"></textarea>
+        </div>
+        <div class="form-btn">
+            <button type="button" class="btn btn-brand btn-vote">like post</button>
+            <button type="submit" class="btn btn-brand">add comment</button>
+        </div>
+    </form>
+    {{/if}}
+
+    {{#if post.comments.length}}
+    {{>comments post.comments}}
+    {{/if}}
+</section>
+<script src="/javascript/post-votes.js"></script>
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+{{/if}}
