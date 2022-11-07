@@ -1,8 +1,6 @@
 async function showVotesHandler(e) {
     e.preventDefault();
-    // select grandparent as post meta
     const postMetaEl = e.target.parentElement.parentElement;
-    // select second child as vote el
     const voteEl = postMetaEl.querySelector('.post-votes');
 
     if (voteEl.style.display === 'block') {
