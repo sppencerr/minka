@@ -2,7 +2,6 @@ async function editPostFormHandler(e) {
     e.preventDefault();
     const formEl = e.target;
 
-    // get post info from form and id from url string
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
@@ -10,7 +9,6 @@ async function editPostFormHandler(e) {
     const post_body = formEl.querySelector('#edit-body').value.trim();
 
     if (post_title && post_body) {
-        // send updated post to database, await response
         const response = await fetch(`/api/posts/${id}`, {
             method: 'PUT',
             body: JSON.stringify({
@@ -22,7 +20,6 @@ async function editPostFormHandler(e) {
             }
         });
 
-        // send back to dashboard or alert to error
         if (response.ok) {
             document.location.replace('/dashboard');
         } else {
@@ -39,7 +36,6 @@ async function deletePostHandler(e) {
         window.location.toString().split('/').length - 1
     ];
 
-    // confirm delete
     const confirmDelete = confirm('Are you sure you want to delete this post? This action cannot be reversed.');
 
     if (confirmDelete) {
