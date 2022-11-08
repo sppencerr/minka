@@ -1,0 +1,20 @@
+{
+  "name": "minka",
+  "version": "1.0.0",
+  "description": "[![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://lbesson.mit-license.org/)   ## Table of Contents   * [Description](#description)   * [Installation](#installation)   * [Usage](#usage)   * [Licenses](#licenses)   * [Contributing](#contributing)   * [Tests](#tests)   * [Questions](#questions)   * [Credits](#credits)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sppencerr/minka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sppencerr/minka/issues"
+  },
+  "homepage": "https://github.com/sppencerr/minka#readme"
+}
