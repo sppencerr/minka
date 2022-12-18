@@ -13,7 +13,7 @@
 
 
   ## Description <a name="description"></a>
-  This project was created as project #2  of the 24 week full stack coding bootcamp at the U of U, this is a cms style blog/forum created  for the ease of students and other developers.
+  This is a tech forum designed for developers by developers to ask questions, upvote posts, and comment.
   ![homepage](./public/images/homepage.png)
 ## Installation <a name="installation"></a>
  git clone code or download repo as a zip
