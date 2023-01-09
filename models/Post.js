@@ -2,7 +2,7 @@ const req = require('express/lib/request');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// post extends sequelize model
+// post extends connetion model
 class Post extends Model {
     static upvote(body, models) {
         return models.Vote.create({
