@@ -5,7 +5,8 @@
     --dk-blue-bg: #88bbd6;
     --muted-grey: #3b3838;
     --brand-color: #c6586a;
-    --brand-font: 'Roboto Mono', 'Courier New', monospace;
+    --brand-font: 'New Century Schoolbook', 'TeX Gyre Schola', serif;
+    
 }
 
 * {
