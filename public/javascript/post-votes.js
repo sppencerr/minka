@@ -1,16 +1,9 @@
-async function showVotesHandler(e) {
+const toggleVoteDisplay = (e) => {
   e.preventDefault();
   const postMetaEl = e.target.parentElement.parentElement;
-  const voteEl = postMetaEl.querySelector(".post-votes");
+  const voteEl = postMetaEl.querySelector('.post-votes');
+  voteEl.style.display = voteEl.style.display === 'block' ? 'none' : 'block';
+};
 
-  if (voteEl.style.display === "block") {
-    voteEl.style.display = "none";
-  } else {
-    voteEl.style.display = "block";
-  }
-}
-
-const voteDataBtns = document.querySelectorAll(".btn-vote-count");
-voteDataBtns.forEach((button) => {
-  button.addEventListener("click", showVotesHandler);
-});
+const voteDataButtons = document.querySelectorAll('.btn-vote-count');
+voteDataButtons.forEach(button => button.addEventListener('click', toggleVoteDisplay));
